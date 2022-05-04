@@ -2,6 +2,7 @@
 <html>
 	<head>
 		<title>Sign Up</title>
+		<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
 		<link rel="stylesheet" href="styles.css">
 	</head>
 	<body>
@@ -12,13 +13,48 @@
 			<div class="flex-child right-panel">
 				<div class="flex-container right-panel-container">
 					<div class="right-panel-container-child intro-text">
-						<h1>This is is not a real online service! You know you need something like this in your life ot help you realize your deepest dreams.</h1>
-						<h1>Sign up <i>now</i> to get started.</h1>
-						<h1></h1>
-						<h1>You <i>know</i> you want to.</h1>
+						<p>This is is not a real online service! You know you need something like this in your life ot help you realize your deepest dreams.</p>
+						<p>Sign up <i>now</i> to get started.</p>
+						</br>
+						<p>You <i>know</i> you want to.</p>
 					</div>
-					<div class="right-panel-container-child signup-table">
-						<h1>Let's do this!</h1>
+					<form action="" class="right-panel-container-child">
+						<div class="form">
+							<p class="form-title">Let's do this!</p>
+							<div class="form-field">
+								<label for="first-name">First name</label>
+								<input type="text" name="first-name" id="first-name" required>
+							</div>
+							<div class="form-field">
+								<label for="last-name">Last name</label>
+								<input type="text" name="last-name" id="last-name" required>
+							</div>
+							<div class="form-field">
+								<label for="email">Email</label>
+								<input type="email" name="email" id="email" required>
+							</div>
+							<div class="form-field">
+								<label for="phone">Phone</label>
+								<input type="text" name="phone" id="phone" required>
+							</div>
+							<div class="form-field">
+								<label for="password">Password</label>
+								<input type="password" name="password" id="password" required>
+							</div>
+							<div class="form-field">
+								<label for="confirm-password">Confirm Password</label>
+								<input type="password" name="confirm-password" id="confirm-password" required>
+							</div>
+						</div>
+						<div class="button">
+							<button type="submit">Create Account</button>
+						</div>
+					</form>
+					<div class="login-text right-panel-container-child">
+
+						<p>Already have an account? </p>
+						<a href="#">Log in</a>
+
 					</div>
 				</div>
 			</div>

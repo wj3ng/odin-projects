@@ -1,5 +1,19 @@
+:root{
+    --color: #e6007e;
+    --txt: rgb(26, 21, 21);
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    color: var(--txt);
+
+    outline: 1px solid red;
+}
+
 html, body {
-	margin: 0;
 	width: 100vw;
 	height: 100vh;
 }
@@ -13,12 +27,14 @@ html, body {
 .flex-child {
 	display: flex;
 	flex: 1;
-	border: 2px solid yellow;
 }
 
 .left-panel {
 	flex: 3;
-	background-color: red;
+	background-image: url("leaf-bg.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 
 .right-panel {
@@ -30,17 +46,45 @@ html, body {
 
 .right-panel-container {
 	flex: 1;
-	width: 90%;
-	border: 2px solid blue;
+	width: 80%;
 
+	display: flex;
 	flex-direction: column;
+	justify-content: center;
+	gap: 20px;
 }
 
 .right-panel-container-child {
-	flex: 1 1 0;
-	border: 2px solid magenta;
+	/* outline: 2px solid blue; */
 }
 
 .intro-text {
-	height: 400px;
+	font-size: 28px;
+	font-weight: bold;
+}
+
+/* FORM */
+
+.form {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.form-field {
+	flex: 1;
+}
+
+.form-field > label {
+	text-transform: uppercase;
+}
+
+.form-field > input {
+
+}
+
+/* LOG IN TEXT */
+
+.login-text {
+	display: flex;
+	gap: 5px;
 }
